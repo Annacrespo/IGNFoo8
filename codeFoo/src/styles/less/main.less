@@ -1,0 +1,43 @@
+@base: white;
+@accent-color: crimson;
+
+body {
+  background-color: @base;
+  font-family: ff-din-round-web-pro, sans-serif;
+}
+
+button {
+  background-color: @accent-color;
+  color: @base;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.mediaSelector button{
+  button
+  font-size: 14px;
+  height: 30px;
+  width: 30%;
+  border-color: @accent-color;
+  border-width: 3px;
+  &:hover {
+    background-color: @base;
+    color: @accent-color;
+  }
+}
+
+#articles {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#videos {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#loadMoreBtn {
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+}
